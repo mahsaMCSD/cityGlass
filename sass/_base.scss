@@ -1,0 +1,152 @@
+:root {
+    --color-primary: #000;
+    --color-less-dark:#363a3e;
+    --color-primary-light: #ededed;
+    --color-primary-dark: #727272;
+    --color-grey-light-1: #b7b7b7;
+    --color-grey-light-2: #ccc;
+    --color-white: #fff;
+    --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+    --line: 1px solid var(--color-grey-light-2);
+    --direction-rtl: rtl;
+}
+@font-face {
+    font-family: 'Yekan';
+    src: url("/fonts/YekanBakh/YekanBakh-Regular.ttf");
+
+}
+
+
+// USAGE
+body {
+    font-family: 'Yekan' !important;
+}
+
+.border-less li {
+    border: 0 none;
+}
+
+.top-less{
+    top:auto !important;
+}
+.top-2rem{
+    top: 2rem;
+}
+.bottom-0{
+    bottom: 0;
+}
+.mt-20{
+    margin-top: 20%;
+}
+.mr-20{
+    margin-right: 20rem;
+}
+.mr-5{
+    margin-right: 5rem;
+}
+
+.float-left{
+    float: left;
+}
+.right-20rem{
+    right: 20rem;
+}
+.right-30rem{
+    right: 30rem;
+}
+.right-10rem{
+    right: 10rem;
+}
+.right-5rem{
+    right: 5rem;
+}
+.left-5rem{
+    left:5rem;
+}
+.pr-5{
+    padding-right: 5rem;
+}
+.pt{
+    padding-top: 10rem;
+}
+.w-15{
+    width: 15%;
+}
+.w-60{
+    width: 60% !important;
+}
+.w-90{
+    width: 90% !important;
+}
+.z-index-1{
+    z-index: 1;
+}
+.z-index-5{
+    z-index: 5;
+}
+
+.z-index-7{
+    z-index: 7;
+}
+.z-index-3{
+    z-index: 3;
+}
+.font16{
+font-size: 16px;
+}
+// .font-title-md{
+//     font-size: 1.75rem;
+// }
+.clip-path-left {
+    clip-path: polygon(0 0, 103% 0, 100% 100%, 7% 100%);
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+    text-align: right;
+    direction: rtl;
+}
+li {
+    font-weight: 400;
+}
+.half-opacity{
+    opacity: 0.5;
+}
+.devider-border{
+    border-bottom: 1px solid var(--color-grey-light-2);
+}
+.border-width-100:after{
+    width: 100% !important;
+    border-color:#fff !important;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+.border-left{
+    border-left: 1px solid var(--color-grey-light-2);
+}
+.border-dashed{
+    border-style: dashed !important;
+}
+.text-decoration-style-dotted{
+    text-decoration-style:dotted ;
+}
+.text-left{
+    text-align: left;
+}
+h5{
+    line-height: 1.8 !important;
+}
+.table .thead-dark th{
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+.form-control::-webkit-input-placeholder {
+    color: var(--color-grey-light-1) !important;
+  }
+  .bg-less-dark{
+      background-color: var(--color-less-dark) !important;
+  }

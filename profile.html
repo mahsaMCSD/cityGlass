@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>ShahrGlass &mdash; Your all-in-one booking app</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-trxYGD5BY4TyBTvU5H23FalSCYwpLA0vWEvXXGm5eytyztxb+97WzzY+IWDOSbav" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <!--MAIN HEADER-->
+        <header class="header my-5">
+            <div class="top-header row">
+                <div class="col-md-3 logo">
+                    <img width="40" src="img/Group 163.jpg" alt="">
+
+                </div>
+                <div class="col-md-9 d-flex justify-content-end align-items-center">
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle" data-toggle="dropdown" type="button"
+                            aria-expanded="false">
+                            <img width="30" src="img/person.svg" alt="">
+                        </button>
+                        <ul class="dropdown-menu header-dbd-profile">
+                            <div class="user-menu-wrap bg-light">
+                                <div class="user-menu px-0 position-relative profile-tabs">
+                                    <div class="nav flex-column">
+                                        <a class="nav-link active border-bottom px-0">
+
+                                            <div class="user-menu__user">
+                                                <img width="60" src="img/circle.svg" alt="">
+                                                <div class="details me-0 w-100">
+                                                    <div id="profile-name">
+                                                        <h3>کسرا کیانفر</h3>
+                                                    </div>
+                                                    <div id="profile-footer">
+                                                        <h6> مشاهده حساب کاربری &gt;</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user-menu__account">
+                                                <div class="user-menu__account--item">
+
+                                                    <span class="mx-2">0912518 50 80</span>
+
+                                                </div>
+                                                <div class="user-menu__account--item">
+                                                    <span class="mx-2">باشگاه مشتریان شهرگلس</span>
+
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="nav-link border-bottom">
+                                            <span class="me-2"><img width="25" src="img/order.svg" alt=""></span><span
+                                                class="font-title-md">پیگیری سفارش های من</span>
+                                        </a>
+
+                                        <a class="nav-link border-bottom">
+
+
+                                            <span class="me-2"><img width="25" src="img/location.svg"
+                                                    alt=""></span><span class="font-title-md">آدرس های منتخب</span>
+
+                                        </a>
+
+                                        <a class="nav-link border-bottom">
+
+                                            <span class="me-2"><img width="25" src="img/email.svg" alt=""></span><span
+                                                class="font-title-md">پیام ها دریافتی</span>
+
+                                        </a>
+                                        <a class="nav-link">
+
+                                            <span class="me-2"><img width="25" src="img/exit.svg" alt=""></span><span
+                                                class="font-title-md">خروج از حساب کاربری</span>
+
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="divider"></div>
+                    <div class="shopping-cart">
+                        <a>
+                            <img width="30" src="img/shopping-cart.svg" alt="">
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-header">
+                <nav class="navbar navbar-expand-lg">
+                  <div class="container-fluid">
+                    <div class="w-100">
+                      <ul class="navbar-nav me-auto col-md-12 d-flex flex-row">
+                        <li class="nav-item col-md-2 me-2">
+                          <div class="dropdown">
+                            <button class="btn btn-dark nav-link w-100 rounded-0 dropdown-toggle" type="button"
+                              data-toggle="dropdown">
+                              <img src="img/justify.svg" alt=""> دسته بندی
+                            </button>
+                            <ul class="dropdown-menu w-100 bg-light">
+                              <li>
+                                <a class="border-bottom text-secondary text-decoration-none d-flex p-3 justify-content-between">
+                                  <span>سامسونگ/SAMSUNG</span> <span class=""><img width="10" src="img/left-arrow.svg"
+                                      alt=""></span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="border-bottom text-secondary text-decoration-none d-flex p-3 justify-content-between">
+                                  <span>اپل/APPLE</span> <span class=""><img width="10" src="img/left-arrow.svg" alt=""></span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="border-bottom text-secondary text-decoration-none d-flex p-3 justify-content-between">
+                                  <span>شیائومی/XIAOMI</span> <span class=""><img width="10" src="img/left-arrow.svg"
+                                      alt=""></span>
+                                </a>
+                              </li>
+        
+                              <li class="dropdown-submenu">
+                                <a href="#"
+                                  class="border-bottom text-secondary test text-decoration-none d-flex p-3 justify-content-between">
+                                  <span>نوکیا/NOKIA</span> <span class=""><img width="10" src="img/left-arrow.svg"
+                                      alt=""></span>
+                                </a>
+                                <ul class="dropdown-menu p-5 bg-light"
+                                  style="right: 100%;min-width:50rem !important;transform:translateY(-5rem)">
+        
+                                  <div class="row">
+                                    <div class="col-md-8">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                          <ul class="list-group border-less mb-3">
+                                            <h5 class="mb-2">نوع دستگاه 1:</h5>
+        
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+        
+        
+                                          </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <ul class="list-group border-less mb-3">
+                                            <h5 class="mb-2">نوع دستگاه 2:</h5>
+        
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                          </ul>
+                                          <ul class="list-group border-less">
+                                            <h5 class="mb-2">نوع دستگاه 3:</h5>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+                                            <li class="list-group-item px-0">نوع دستگاه یک
+                                            </li>
+        
+                                          </ul>
+                                        </div>
+                                      </div>
+        
+                                    </div>
+                                    <div class="col-md-4">
+                                      <div class="row">
+                                        <div class="col-md-12 mb-2">
+                                          <img class="img-fluid p-1" src="img/default-square-img.svg" alt="">
+                                        </div>
+                                        <div class="col-md-12">
+                                          <img class="img-fluid" src="img/default-square-img.svg" alt="">
+        
+                                        </div>
+                                      </div>
+        
+                                    </div>
+                                  </div>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+        
+                        </li>
+                        <li class="nav-item col-md-2 me-2">
+        
+                          <button type="button" class="btn btn-dark nav-link w-100 rounded-0"><img
+                              src="img/shopping-cart-wt.svg" width="32" height="19" alt="35">فروشگاه</button>
+                        </li>
+                        <li class="nav-item col-md-6 me-2">
+                          <form class="d-flex">
+                            <input class="form-control rounded-0" type="search"
+                              placeholder="مدل دستگاه یا محافظ صفحه نمایش مد نظرخود را  جست و جو کنید" aria-label="Search">
+                            <button class="btn btn-light" type="submit"><img class="w-50" src="img/search.svg"></button>
+                          </form>
+                          <ul class="list-group list-group-horizontal border-less">
+                            <li class="list-group-item list-group-item-dark rounded-0">سرویس شهرگلس</li>
+                            <li class="list-group-item list-group-item-dark rounded-0">تخفیفات و پیشنهادات
+                            </li>
+                            <li class="list-group-item list-group-item-dark rounded-0">محصولات جدید</li>
+                            <li class="list-group-item list-group-item-dark rounded-0 clip-path-left">سوالی
+                              دارید؟</li>
+                          </ul>
+                        </li>
+        
+                        <li class="nav-item col-md-2">
+                          <button href="" type="button" class="btn btn-outline-secondary w-100 nav-link rounded-0">پنل شعب و
+                            همکاران</button>
+                        </li>
+                      </ul>
+        
+                    </div>
+                  </div>
+                </nav>
+        
+              </div>
+        </header>
+        <div class="container mx-auto" style="max-width:100rem">
+            <div class="row mb-5" style="height: 33rem;">
+                <div class="col-md-3">
+                    <!--TABS-->
+                    <div class="user-menu-wrap bg-light">
+                        <div class="user-menu px-0 position-relative profile-tabs">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active border-bottom px-0" id="v-pills-home-tab" data-toggle="pill"
+                                    href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+
+                                    <div class="user-menu__user">
+                                        <img width="60" src="img/circle.svg" alt="">
+                                        <div class="details me-0 w-100">
+                                            <div id="profile-name">
+                                                <h3>کسرا کیانفر</h3>
+                                            </div>
+                                            <div id="profile-footer">
+                                                <h6> مشاهده حساب کاربری ></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="user-menu__account">
+                                        <div class="user-menu__account--item">
+
+                                            <span class="mx-2">0912518 50 80</span>
+
+                                        </div>
+                                        <div class="user-menu__account--item">
+                                            <span class="mx-2">باشگاه مشتریان شهرگلس</span>
+
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="nav-link border-bottom" id="v-pills-profile-tab" data-toggle="pill"
+                                    href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                    aria-selected="false">
+                                    <span class="me-2"><img width="25" src="img/order.svg" alt=""></span><span
+                                        class="font-title-md">پیگیری سفارش های من</span>
+                                </a>
+
+                                <a class="nav-link border-bottom" id="v-pills-messages-tab" data-toggle="pill"
+                                    href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                    aria-selected="false">
+
+
+                                    <span class="me-2"><img width="25" src="img/location.svg" alt=""></span><span
+                                        class="font-title-md">آدرس های منتخب</span>
+
+                                </a>
+
+                                <a class="nav-link border-bottom" id="v-pills-settings-tab" data-toggle="pill"
+                                    href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                    aria-selected="false">
+
+                                    <span class="me-2"><img width="25" src="img/email.svg" alt=""></span><span
+                                        class="font-title-md">پیام ها دریافتی</span>
+
+                                </a>
+                                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                    href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                    aria-selected="false">
+
+                                    <span class="me-2"><img width="25" src="img/exit.svg" alt=""></span><span
+                                        class="font-title-md">خروج از حساب کاربری</span>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <!--TAB CONTENT-->
+                    <div class="card bg-light border-light">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab">
+                                <div class="card-body row">
+
+                                    <form class="col-md-5 border-left">
+
+                                        <div class="form-group row">
+                                            <label for="name" class="text-secondary">نام و نام خانوادگی</label>
+                                            <label for="name" class="col-form-label">کسرا کیانفر</label>
+                                        </div>
+                                        <div class="devider-border w-95 m-auto my-3"></div>
+
+                                        <div class="form-group row">
+                                            <label for="phone" class="text-secondary">شماره تماس</label>
+                                            <label for="phone" class="col-form-label">09125185080</label>
+                                        </div>
+                                        <div class="devider-border w-95 m-auto my-3"></div>
+                                        <div class="form-group row">
+                                            <label for="newsletter" class="text-secondary">دریافت خبرنامه و تخفیف
+                                                ها</label>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline1">بله</label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                                    class="custom-control-input">
+                                                <label class="custom-control-label" for="customRadioInline2">خیر</label>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                    <form class="col-md-6">
+                                        <div class="form-group row">
+                                            <label for="name" class="text-secondary">پست الکترونیک</label>
+                                            <label for="name"
+                                                class="col-form-label">MagnetarStudio.Team@gmail.com</label>
+                                        </div>
+                                        <div class="devider-border w-95 m-auto my-3"></div>
+                                        <div class="form-group row">
+                                            <label for="name" class="text-secondary">آدرس منتخب فعال</label>
+                                            <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه
+                                                مستقیم خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div class="card-body row">
+                                    <label for="name" class="text-secondary">آخرین وضعبت مرسوله خریداری شده</label>
+                                    <div class="d-flex" style="height: 10rem;"></div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab">
+                                <table class="table table-bordered">
+                                    <thead class="thead-dark">
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">شماره سفارش</th>
+                                            <th scope="col">تاریخ سفارش</th>
+                                            <th scope="col">مبلغ پرداخت/تراکنش</th>
+                                            <th scope="col">تاییدیه پرداخت</th>
+                                            <th scope="col">جززئیات</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <div class="btn-group mx-auto">
+                                                    <button type="button" class="btn btn-light bg-white dropdown-toggle"
+                                                        data-toggle="dropdown" aria-haspopup="true"
+                                                        aria-expanded="false">
+
+                                                    </button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                        <div class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade p-3" id="v-pills-messages" role="tabpanel"
+                                aria-labelledby="v-pills-messages-tab">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio1" name="customRadio"
+                                        class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadio1">
+                                        <div class="form-group row">
+                                            <label for="name" class="text-secondary">آدرس منتخب فعال</label>
+                                            <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه
+                                                مستقیم خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="devider-border w-95 m-auto my-3"></div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio2" name="customRadio"
+                                        class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customRadio2">
+                                        <div class="form-group row">
+                                            <label for="name" class="text-secondary">آدرس دوم غیر فعال</label>
+                                            <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه
+                                                مستقیم خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="devider-border w-95 m-auto my-3"></div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio3" name="customRadio"
+                                        class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customRadio3">
+                                        <div class="form-group row">
+                                            <label for="name" class="text-secondary">آدرس سوم غیر فعال</label>
+                                            <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه
+                                                مستقیم خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="devider-border w-95 m-auto my-3"></div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="customRadio4" name="customRadio"
+                                        class="custom-control-input" disabled>
+                                    <label class="custom-control-label" for="customRadio4">
+                                        <div class="form-group row">
+                                            <label for="name" class="text-secondary">آدرس سوم غیر فعال</label>
+                                            <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه
+                                                مستقیم خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade p-3" id="v-pills-settings" role="tabpanel"
+                                aria-labelledby="v-pills-settings-tab">
+                                <div class="form-group row">
+                                    <label for="name" class="text-secondary">پیام شماره یک</label>
+                                    <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه مستقیم
+                                        خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                </div>
+                                <div class="devider-border w-95 m-auto my-3"></div>
+
+                                <div class="form-group row">
+                                    <label for="name" class="text-secondary">پیام شماره یک</label>
+                                    <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه مستقیم
+                                        خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                </div>
+                                <div class="devider-border w-95 m-auto my-3"></div>
+
+                                <div class="form-group row">
+                                    <label for="name" class="text-secondary">پیام شماره یک</label>
+                                    <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه مستقیم
+                                        خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                </div>
+                                <div class="devider-border w-95 m-auto my-3"></div>
+
+                                <div class="form-group row">
+                                    <label for="name" class="text-secondary">پیام شماره یک</label>
+                                    <p>تهران، تهران، سعادت آباد،بلوار پاکنژاد،بلوار پیام،خیابان ۱۷-در ادامه مستقیم
+                                        خیابان ۲۰،پلاک۱۷،واحد۴، پلاک ۱۷، واحد ۴</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-md-2 h-100 overflow-hidden">
+                    <img class="img-fluid" src="img/default-img-rectang-vertical.svg" alt="">
+                </div>
+            </div>
+            <!--BEST SELLER-->
+            <div class="content-box mb-5">
+                <h3 class="text-center mb-5">محصولات پرفروش</h3>
+                <div class="row py-5">
+                    <div class="col-md-3"><img class="d-block w-100" src="img/default-square-img.svg"></div>
+                    <div class="col-md-3"><img class="d-block w-100" src="img/default-square-img.svg"></div>
+                    <div class="col-md-3"><img class="d-block w-100" src="img/default-square-img.svg"></div>
+                    <div class="col-md-3"><img class="d-block w-100" src="img/default-square-img.svg"></div>
+                </div>
+            </div>
+            <!--SECURITY CUSTOMER-->
+            <div class="row my-5 security-customer half-opacity">
+                <div class="col-md-3 col-sm-6">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-3">
+                            <img class="img-fluid" src="img/mini-iphone.svg" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h4>نصب در محل</h4>
+                            <p class="text-secondary">تمامی سفارشات تهران</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-3">
+                            <img class="img-fluid" width="66" src="img/mini-truck.svg" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h4>ارسال رایگان</h4>
+                            <p class="text-secondary">تمامی سفارشات تهران</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-3">
+                            <img class="img-fluid" width="66" src="img/mini-warrenty.svg" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h4>ضمانت تعویض کالا</h4>
+                            <p class="text-secondary">تمامی سفارشات تهران</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-3">
+                            <img class="img-fluid" width="66" src="img/credit-card.svg" alt="">
+                        </div>
+                        <div class="col-md-7">
+                            <h4>نصب در محل</h4>
+                            <p class="text-secondary">تمامی سفارشات تهران</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div class="container-fluid p-0">
+        <!--TOP FOOTER-->
+        <div class="map">
+            <div class="container">
+                <div class="content-box p-5 d-flex align-items-center mx-5">
+                    <h5 class="right-10rem me-2 fw-normal">آدرس فروشگاه شهر گلس به وسعت یک شهر </h5>
+                    <button href="" type="button" class="btn btn-outline-secondary rounded-0">
+                        مسیریابی
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <!--FOOTER-->
+        <div class="bg-dark text-white">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="col-md-7">
+                        <h3 class="mb-3 fw-normal">بیا تا باهم در تبادل اطلاعات آخرین اخبار و محصولات باشیم</h3>
+                        <h5 class="mx-5 fw-normal">اخبار و محصولات جدید شهر گلس مستقیم به ایمیلت ارسال میشه</h5>
+                        <form class="d-flex p-3 px-0 pb-0">
+                            <input class="form-control rounded-0 bg-dark text-white w-75" type="text"
+                                placeholder="ایمیل خود را وارد نمایید" aria-label="NewsLetter">
+                            <button class="btn btn-outline-light btn-lg" type="submit">اشتراک خبرنامه</button>
+                        </form>
+                        <h6 class="fw-normal mb-5">حریم خصوصی شما همیشه طبق قوانین گوگل حفظ میشود</h6>
+                        <ul class="list-group list-group-horizontal footer-list border-less menu-footer-list">
+                            <li class="list-group-item p-0 px-2">درباره ما</li>
+                            <li class="list-group-item p-0 px-2">ارتباط امور مشتریان</li>
+                            <li class="list-group-item p-0 px-2">ارتباط با واحد فروشگاه</li>
+                            <li class="list-group-item p-0 px-2">صندوق شکایات و پیشنهادات</li>
+                            <li class="list-group-item p-0 px-2">فروشگاه شهر گلس</li>
+                            <li class="list-group-item p-0 px-2">وبلاگ</li>
+                            <li class="list-group-item p-0 px-2">تماس با ما</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <h3 class="mb-2 fw-normal">خدمات ما</h3>
+                        <ul class="list-group border-less bg-dark footer-list">
+                            <li class="list-group-item px-0">درباره ما</li>
+                            <li class="list-group-item px-0">ارتباط امور مشتریان</li>
+                            <li class="list-group-item px-0">ارتباط با واحد فروشگاه</li>
+                            <li class="list-group-item px-0">صندوق شکایات و پیشنهادات</li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <h3 class="mb-2 fw-normal">محافظ صفحه نمایش</h3>
+                        <ul class="list-group border-less bg-dark footer-list manu-footer-list">
+                            <li class="list-group-item px-0">درباره ما</li>
+                            <li class="list-group-item px-0">ارتباط امور مشتریان</li>
+                            <li class="list-group-item px-0">ارتباط با واحد فروشگاه</li>
+                            <li class="list-group-item px-0">صندوق شکایات و پیشنهادات</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-box text-center">
+                    <!--COPY RIGHT-->
+                    <h6 class="">Our Cookies Policy Generator can create a customized Cookies Policy to help your
+                        compliance with
+                        ePrivacy Directive and GDPR.</h6>
+                    <!--FOOTER SOCIAL MEDIA-->
+
+                    <ul class="list-group list-group-horizontal footer-list border-less justify-content-center">
+                        <li class="list-group-item"><img width="100" src="img/paypal.svg" alt=""></li>
+                        <li class="list-group-item"><img width="100" src="img/visa.svg" alt=""></li>
+                        <li class="list-group-item"><img width="100" src="img/paypal.svg" alt=""></li>
+                        <li class="list-group-item"><img width="100" src="img/paypal.svg" alt=""></li>
+                        <li class="list-group-item"><img width="100" src="img/paypal.svg" alt=""></li>
+                        <li class="list-group-item"><img width="100" src="img/paypal.svg" alt=""></li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
