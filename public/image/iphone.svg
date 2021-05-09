@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="424.194" height="900.73" viewBox="0 0 424.194 900.73">
+  <g id="iphone-x-wire" transform="translate(-765.5 -128.926)">
+    <g id="Group_1" data-name="Group 1" transform="translate(765.5 128.926)">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="408.927" height="885.464" rx="38.222" transform="translate(7.633 7.634)" fill="#fff" opacity="0.94"/>
+      <path id="Path_1" data-name="Path 1" d="M1140.38,1029.656H814.813A49.369,49.369,0,0,1,765.5,980.343v-802.1a49.369,49.369,0,0,1,49.313-49.313H1140.38a49.368,49.368,0,0,1,49.313,49.313v802.1A49.369,49.369,0,0,1,1140.38,1029.656ZM814.813,144.193a34.085,34.085,0,0,0-34.047,34.047v802.1a34.085,34.085,0,0,0,34.047,34.047H1140.38a34.085,34.085,0,0,0,34.047-34.047v-802.1a34.085,34.085,0,0,0-34.047-34.047Z" transform="translate(-765.5 -128.926)" fill="#1d1d1d"/>
+    </g>
+    <path id="Path_95" data-name="Path 95" d="M0,0H193.677V2.41a26.639,26.639,0,0,1-26.639,26.639H26.639A26.639,26.639,0,0,1,0,2.41Z" transform="translate(889.695 143.387)" fill="#1d1d1d"/>
+    <path id="Path_96" data-name="Path 96" d="M2.217,0H191.46a2.217,2.217,0,0,1,2.217,2.217v.4a2.217,2.217,0,0,1-2.217,2.217H2.217A2.217,2.217,0,0,1,0,2.619v-.4A2.217,2.217,0,0,1,2.217,0Z" transform="translate(889.695 990.29)" fill="#1d1d1d"/>
+    <line id="Line_1" data-name="Line 1" x1="370.605" y2="853.113" transform="translate(791.996 152.476)" fill="none" stroke="#e8eff7" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Line_2" data-name="Line 2" x2="370.605" y2="853.113" transform="translate(792.592 152.735)" fill="none" stroke="#e8eff7" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
