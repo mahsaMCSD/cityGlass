@@ -1,28 +1,41 @@
 import React from 'react'
-import { Accordion, Card, Button } from 'react-bootstrap'
-const FilterDirectory = (props) => (
-    <Accordion defaultActiveKey="0">
-        <Card>
-            <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                    Click me!
-        </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="0">
-                <Card.Body>Hello! I'm the body</Card.Body>
-            </Accordion.Collapse>
-        </Card>
-        <Card>
-            <Card.Header>
-                <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    Click me!
-        </Accordion.Toggle>
-            </Card.Header>
-            <Accordion.Collapse eventKey="1">
-                <Card.Body>Hello! I'm another body</Card.Body>
-            </Accordion.Collapse>
-        </Card>
-    </Accordion>
+import Accordion from 'react-bootstrap/Accordion'
+import { Card, Button } from 'react-bootstrap'
 
-);
+const FilterDirectory = (props) => (
+    <div>
+        <Accordion>
+            {
+                props.categories.map((category, i) => (
+                    category.data.map((cat, index) => (
+                            <Card key={index}>
+                                <Card.Header>
+                                    <Accordion.Toggle as={Card.Header} eventKey={index === 0 ? '0' : index}>
+                                        {cat.parent.category}
+                                    </Accordion.Toggle>
+                                </Card.Header>
+                                <Accordion.Collapse eventKey={index === 0 ? '0' : index}>
+                                    <Card.Body>
+                                        <ul className="list-group border-less mb-3">
+                                            {cat.subcategories.map((sub, i) => (
+                                                <li key={i} className="list-group-item px-0"><a className="text-secondary text-decoration-none" onClick={() => handleCatSelect(sub)}>{sub.category}</a></li>
+                                            ))
+                                            }
+                                        </ul>
+                                    </Card.Body>
+                                </Accordion.Collapse>
+                            </Card>
+
+                        
+                    ))
+                ))
+            }
+
+
+        </Accordion>
+    
+    </div>
+
+
+)
 export default FilterDirectory
