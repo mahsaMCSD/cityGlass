@@ -2,10 +2,9 @@ import React from 'react'
 import { useAccordionToggle } from 'react-bootstrap/AccordionToggle';
 
 
-function CustomToggle({ children, eventKey,sendDatatoParent,sendDatatofromsecondChild}) {
+function CustomToggle({ children, eventKey,sendDatatoParent }) {
     const decoratedOnClick = useAccordionToggle(eventKey, () =>
-          sendDatatoParent(eventKey),
-          sendDatatofromsecondChild
+          sendDatatoParent(eventKey)
     );
     return (
       <div             

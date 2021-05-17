@@ -88,7 +88,7 @@ class FilterDirectory extends React.Component {
                                                     return <Accordion key={index}>
                                                         <Card>
                                                             <Card.Header>
-                                                                <CustomToggle eventKey={catFilterkeybased.filter_key} sendDatatoParent={data => this.setState({ catSelectedSubfk: data })} sendDatatofromsecondChild={this.props.handleSelectedBrand}>{catFilterkeybased.category}</CustomToggle>
+                                                                <CustomToggle eventKey={catFilterkeybased.filter_key} sendDatatoParent={data => this.setState({ catSelectedSubfk: data })}>{catFilterkeybased.category}</CustomToggle>
                                                             </Card.Header>
                                                             <Accordion.Collapse eventKey={catFilterkeybased.filter_key}>
                                                                 <Card.Body>
@@ -97,7 +97,7 @@ class FilterDirectory extends React.Component {
                                                                             this.state.catSubFilterkeybaseds[catFilterkeybased.filter_key] && this.state.catSubFilterkeybaseds[catFilterkeybased.filter_key].map((catSubFilterkeybaseds, i) => {
                                                                                 return <Card key={i}>
                                                                                     <Card.Header>
-                                                                                        <span>{catSubFilterkeybaseds.category}</span>
+                                                                                        <span onClick={this.props.handleChangeCategory}>{catSubFilterkeybaseds.category}</span>
                                                                                     </Card.Header>
                                                                                     
 
